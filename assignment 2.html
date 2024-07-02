@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="block-example">
+        This is a block-level element.
+    </div>
+    <span class="inline-example">
+        This is an inline-level element.
+    </span>
+    <button class="inline-block-example">
+        This is an inline-block-example.
+    </button>
+    <div class="none-example">
+        This is a hidden element.
+    </div>
+    <div class="flex-example">
+        <div>Flex item 1</div>
+        <div>Flex item 2</div>
+        <div>Flex item 3</div>
+    </div>
+    <div class="grid-example">
+        <div>Grid item 1</div>
+        <div>Grid item 2</div>
+        <div>Grid item 3</div>
+    </div>
+</body>
+</html>
+
+
+function addTask() {
+    const taskText = document.getElementById('newTask').value;
+    if (taskText === '') return;
+
+    const li = document.createElement('li');
+    li.innerText = taskText;
+
+    const buttonsDiv = document.createElement('div');
+    buttonsDiv.className = 'buttons';
+
+    const doneButton = document.createElement('button');
+    doneButton.innerText = 'Done';
+    doneButton.onclick = function() {
+        li.classList.toggle('done');
+    };
+
+    const deleteButton = document.createElement('button');
+    deleteButton.innerText = 'Delete';
+    deleteButton.onclick = function() {
+        li.remove();
+    };
+
+    buttonsDiv.appendChild(doneButton);
+    buttonsDiv.appendChild(deleteButton);
+
+    li.appendChild(buttonsDiv);
+    document.getElementById('toDoList').appendChild(li);
+
+    document.getElementById('newTask').value = '';
+}

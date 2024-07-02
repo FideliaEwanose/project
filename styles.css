@@ -1,0 +1,58 @@
+.block-example {
+    display: block;
+    background-color: lightblue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.inline-example {
+    display: inline;
+    background-color: lightgreen;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.inline-block-example {
+    display: inline-block;
+    background-color: lightcoral;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.none-example {
+    display: none;
+}
+
+.flex-example {
+    display: flex;
+    background-color: lightyellow;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.flex-example div {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.grid-example {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.grid-example div {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+/* const date = new Date()
+alert(date);
+.getDay()
+.getDate()
+.getMonth()
+.getFullYear() */

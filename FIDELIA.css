@@ -1,0 +1,241 @@
+
+body{
+    background-image: linear-gradient(to bottom left,red, yellow, pink, blue);
+    /*background-image: radial-gradient (circle, red, pink, blue);*/
+}
+.dotted{
+
+border-style: dotted;
+border-color: green;
+ border-width: 5px;
+border-radius: 30px;
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 4px;
+margin-right: 4px;
+padding-left: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-right: 20px;
+}
+.dashed{
+border: 5px dashed red;
+margin:20px;
+padding: 20px;
+background-color: lightgreen;
+width: 50px;
+height: 50px;
+/*display: none;*/
+/*visibility: hidden;*/
+position: absolute;
+/*bottom: -40px;*/
+/*left: -70px;*/
+right: 5px;
+
+}
+.solid{
+border-style: solid;
+padding: 20px;
+}
+.double{
+border-style: double;
+border-color: antiquewhite;
+border-width: 15;
+border-radius: 80px
+}
+.mixed{
+border-style: dashed dotted solid double;
+ border-color: azure;
+ border-width: 20;
+ border-radius: 95;
+}
+
+#right{
+    text-align: right;
+    text-transform: uppercase;
+    text-shadow: 2px 2px aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+}
+#center{
+    text-align: center;
+    text-transform:capitalize;
+    font: 35px courier italic;
+}
+#left{
+    text-align: left;
+    text-transform: lowercase;
+}
+a{
+     color:brown;
+}
+a:visited{
+    color: yellow;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: black;
+}
+.fruits{
+    list-style-type: circle;
+}
+.fruit{
+    list-style-type: upper-roman;
+}
+table{
+    overflow: scroll;
+}
+
+.div1{
+    background: red;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    top: 10px;
+    left: 80px;
+    z-index: 2;
+}
+
+.div2{
+    background: yellow;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    top: -60px;
+    left: 35px;
+    z-index: 1;
+}
+
+.div3{
+    background: pink;
+    width: 300px;
+    height: 100;
+    position: relative;
+    top: -50px;
+    left: 120;
+    z-index: 3;
+}
+
+/* img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    max-lines: 120px;
+} */
+
+.class+div{
+    /* background: blue; */
+    width: 40px;
+    height: 40px;
+}
+
+/* #my id ~div{
+    background:
+} */
+
+.name{
+    background: green;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    background-image: linear-gradient(to top, right,red, yellow);
+}
+
+.name div{
+    background:grey ;
+    width: 200px;
+    height: 200px;
+    /* padding: 20px; */
+    opacity: 0.5;
+}
+body{
+       /* background-image: url(image.jpg), url(image.jpg), url(image.jpg);
+        background-repeat: no-repeat;
+        background-size: 500px;
+        container: center;
+        background-position: top, bottom,right;*/
+        /* background: url(image.jpg) top, bottom, url(image.jpg) right, left, no-repeat */
+       background-image: linear-gradient(to top, right,red, yellow);
+       /*background-image: repeating-linear-gradient(red 10%, green 20%, brown 15%);*/
+      /*background-image:repeating-radial-gradient(red 10%, pink 20%, blue 15%);*/
+}
+
+@keyframes animationName {
+    0%{
+        background-color: green;
+        color: red;
+        font-size: 30px;
+    }
+
+10%{
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+}
+
+20%{
+    background-color: brown;
+    color: gray;
+    font-size: 30px;
+}
+
+40%{
+    background-color: aqua;
+    color: pink;
+    font-size: 30px;
+}
+}
+
+.animation{
+    width: 300px;
+    height: 300px;
+    background:green ;
+    animation-name: animationName;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count:infinite ;
+    animation-direction: reverse;
+    animation-timing-function: ease-out;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: 100px  150px  auto;
+    grid-template-rows: 90px 120px;
+    gap: 10px;
+    /*row-gap: 10px;*/
+
+}
+
+.ball{
+    background-color: blue;
+    border: 3px solid red;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: aqua;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    body{
+        background-color:purple;
+    }
+    
+}
+
+@media only screen and (max-width: 400px) {
+    body{
+        background-color: pink;
+    }
+    
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,9 @@
+body{
+     background-color: red;
+}
+
+#error{
+    background-color: red;
+    color: white;
+    padding: 20px;
+}
